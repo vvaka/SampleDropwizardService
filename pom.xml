@@ -15,8 +15,8 @@
 	</repositories>
 
 	<properties>
-		<dropwizard.version>0.7.0</dropwizard.version>
-		<hibernate.version>4.3.4.Final</hibernate.version>
+		<dropwizard.version>0.9.0</dropwizard.version>
+		<hibernate.version>5.3.18.Final</hibernate.version>
 		<spring.version>4.0.3.RELEASE</spring.version>
 	</properties>
 
@@ -214,10 +214,8 @@
 						</goals>
 						<configuration>
 							<transformers>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>com.nishant.example.HelloWorldApplication</mainClass>
 								</transformer>
 							</transformers>
@@ -234,8 +232,8 @@
 			<name>Nishant Chandra</name>
 			<email>nishant.chandra@gmail.com</email>
 			<url>http://n-chandra.blogspot.in/</url>
-			<organization></organization>
-			<organizationUrl></organizationUrl>
+			<organization/>
+			<organizationUrl/>
 			<roles>
 				<role>principal</role>
 				<role>developer</role>
